@@ -19,7 +19,7 @@ const FAQs = () => {
                         </div>
                         <div className='flex flex-col gap-2'>
                             <h3 className='font-semibold font-josefin-sans text-[#151875] font-xl'>Eu dictumst cum at sed euismood condimentum?</h3>
-                            <p className='font-josefin-sans text-[#A1ABCC]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.</p>
+                            <p className='font-josefin-sans text-[#A1ABCC]'>Lorem ipsum dolor sitd amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.</p>
                         </div>
                         <div className='flex flex-col gap-2'>
                             <h3 className='font-semibold font-josefin-sans text-[#151875] font-xl'>Eu dictumst cum at sed euismood condimentum?</h3>
