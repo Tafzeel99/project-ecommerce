@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Menu */}
         <div className='hidden md:flex col-span-2 justify-start gap-4 items-center'>
           <Link href={"/"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Home</Link>
-          <Link href={"/shop/grid"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Products</Link>
+          <Link href={"/product/page"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Products</Link>
           <Link href={"/blog"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Blog</Link>
           <Link href={"/shop"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Shop</Link>
           <Link href={"/about"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>About</Link>
@@ -36,13 +36,13 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        {open && <div className='z-10 absolute top-40 right-0 bg-navyBlue backdrop:blur-md w-full h-auto flex flex-col items-center justify-start p-10 gap-3'>
-          <div className='w-80 h-10 bg-skyBlue border-gray-200 border grid grid-cols-6 items-center my-4'>
+        {open && <div className='z-10 absolute top-40 right-0 bg-[#070722] backdrop:blur-md w-full h-auto flex flex-col items-center justify-start p-10 gap-3'>
+          <div className='w-80 h-10  border-gray-200 border grid grid-cols-6 items-center my-4'>
             <input type="text" className='p-3 font-josefin-sans font-semibold text-offNavyBlue border-gray-300 border outline-none placeholder:text-gray-300 col-span-5' placeholder='' />
             <button className='bg-[#fb2e86] w-full h-full flex justify-center items-center'><FiSearch size={20} color='white' /></button>
           </div>
           <Link href={"/"} className='font-lato text-white hover:underline hover:text-[#fb2e86]'>Home</Link>
-          <Link href={"/shop/grid"} className='font-lato text-white hover:underline hover:text-[#fb2e86]'>Products</Link>
+          <Link href={"/product/page"} className='font-lato text-white hover:underline hover:text-[#fb2e86]'>Products</Link>
           <Link href={"/blog"} className='font-lato text-white hover:underline hover:text-[#fb2e86]'>Blog</Link>
           <Link href={"/shop"} className='font-lato text-white hover:underline hover:text-[#fb2e86]'>Shop</Link>
           <Link href={"/about"} className='font-lato text-white hover:underline hover:text-[#fb2e86]'>About</Link>

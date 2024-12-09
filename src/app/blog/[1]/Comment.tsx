@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md'
 
 const Comment = () => {
     return (
-        <div className='w-full px-5 my-10'>
+        <div className='w-full px-5 mt-10 mb-0'>
             <div className='grid md:grid-cols-2 gap-7'>
                 <div className='flex justify-start items-center border border-[#8A8FB9] rounded-sm py-2 px-3 gap-3'>
                     <BiUser className='text-gray-500' />

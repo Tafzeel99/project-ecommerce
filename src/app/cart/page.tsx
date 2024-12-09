@@ -35,31 +35,31 @@ const CartPage = () => {
                     </div>
                     <div className="flex flex-col md:flex-row lg:flex-col gap-4 col-span-full md:gap-3 lg:col-span-2">
                         <div className='flex flex-col md:col-span-2 lg:col-span-2'>
-                            <h2 className='text-2xl lg:text-xl font-bold text-navyBlue text-center py-5'>Cart Total</h2>
+                            <h2 className='text-2xl lg:text-xl font-bold text-[#1D3178] text-center py-5'>Cart Total</h2>
                             <div className='bg-[#F4F4FC] rounded-sm p-4'>
                                 <div className='flex justify-between items-center pt-4 pb-2 border-b border-gray-400 py-4'>
-                                    <p className='font-lato font-semibold text-lg text-navyBlue'>Subtotal</p>
-                                    <p className='font-lato text-lg text-navyBlue'>$219.00</p>
+                                    <p className='font-lato font-semibold text-lg text-[#1D3178]'>Subtotal</p>
+                                    <p className='font-lato text-lg text-[#1D3178]'>$219.00</p>
                                 </div>
                                 <div className='flex justify-between items-center pt-10 pb-2 border-b border-gray-400 py-4'>
-                                    <p className='font-lato font-semibold text-lg text-navyBlue'>Total</p>
-                                    <p className='font-lato text-lg text-navyBlue'>$345.00</p>
+                                    <p className='font-lato font-semibold text-lg text-[#1D3178]'>Total</p>
+                                    <p className='font-lato text-lg text-[#1D3178]'>$345.00</p>
                                 </div>
                                 <div className='flex justify-start gap-1 pt-8 pb-10'>
                                     <IoIosCheckmarkCircle className='text-xs text-green-600' />
                                     <p className='text-xs text-gray-500 font-lato'>Shipping and Taxes calculated at checkout.</p>
                                 </div>
-                                <Link href={"/payment"} className='bg-green-500 rounded-md text-white w-full py-3'>Proceed to Checkout</Link>
+                                <Link href={"/payment"} className='bg-green-500 rounded-md content-center text-white w-full px-4 py-3'>Proceed to Checkout</Link>
                             </div>
                         </div>
                         <div className='flex flex-col md:col-span-2 lg:col-span-2'>
-                            <h2 className='text-2xl lg:text-xl  font-bold text-navyBlue text-center py-5'>Checkout</h2>
+                            <h2 className='text-2xl lg:text-xl  font-bold text-[#151875] text-center py-5'>Checkout</h2>
                             <div className='bg-[#F4F4FC] rounded-sm p-4 flex flex-col gap-y-8'>
                                 <input type="text" className='bg-transparent text-gray-700 placeholder:text-[#C5CBE3] border-b border-b-[#C5CBE3] outline-none pb-2' placeholder='Bangladesh' />
                                 <input type="text" className='bg-transparent text-gray-700 placeholder:text-[#C5CBE3]  border-b border-b-[#C5CBE3] outline-none pb-2' placeholder='Mirapur Dhaka, 1200 ' />
                                 <input type="text" className='bg-transparent text-gray-700 placeholder:text-[#C5CBE3]  border-b border-b-[#C5CBE3] outline-none  pb-2' placeholder='Postal Code' />
                                 <div className='flex justify-start gap-1 py-6'>
-                                    <button className='bg-pink rounded-sm font-josefin-sans px-8 text-white py-3'>Calculate Shipping</button>
+                                    <button className='bg-[#fb2e86] rounded-md font-josefin-sans px-8 text-white py-3'>Calculate Shipping</button>
 
                                 </div>
                             </div>

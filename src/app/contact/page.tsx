@@ -4,7 +4,7 @@ import React from 'react'
 import { FaCircle } from 'react-icons/fa'
 import { MdContacts, MdLocationCity, MdSupportAgent } from 'react-icons/md'
 import { TbTruckDelivery } from 'react-icons/tb'
-import Input from '../payment/Input'
+import Input from '../checkout/Input'
 import Image from 'next/image'
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='flex justify-start items-center gap-3'>
-                            <div className='bg-pink size-11 rounded-full flex justify-center items-center text-white text-2xl'>
+                            <div className='bg-[#fb2e86] size-11 rounded-full flex justify-center items-center text-white text-2xl'>
                                 <MdSupportAgent />
                             </div>
                             <div className='flex flex-col gap-1 font-lato text-[#8A8FB9]'>
@@ -74,9 +74,9 @@ const Contact = () => {
                     <Input placeholder='Subject' span='2' v={2} />
                     <textarea name="message" id="message" rows={5} className='bg-transparent text-gray-700 placeholder:text-[#C5CBE3] border border-[#C5CBE3] outline-none px-3 py-2 col-span-2 w-full' placeholder='Type Your Message'></textarea>
                     </div>
-                    <button className='bg-pink rounded-sm font-josefin-sans px-8 text-white py-3'>Send Message</button>
+                    <button className='bg-[#fb2e86] rounded-sm font-josefin-sans px-8 text-white py-3'>Send Mail</button>
                 </div>
-                <Image src={"/contact.png"} width={725} height={695} alt='contact' className=' hidden lg:w-full' />
+                <Image src={"/contact.png"} width={725} height={695} alt='contact' className='  lg:w-full' />
             </div>
         </div>
     )

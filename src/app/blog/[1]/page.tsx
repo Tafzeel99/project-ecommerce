@@ -20,22 +20,22 @@ const SingleBlog = () => {
                     <div className='flex flex-col py-4 px-2 items-start gap-3'>
                         <div className='flex justify-start gap-4'>
                             <div className="flex justify-start items-center gap-1">
-                                <FaPenNib className='text-pink size-3' />
-                                <p className={`font-josefin-sans text-navyBlue text-sm bg-pink/20 `}>Sarfaraz Unar</p>
+                                <FaPenNib className='text-[#fb2e86] size-3' />
+                                <p className={`font-josefin-sans text-[#151875] text-sm bg-pink-100 px-2 `}>Tafzeel</p>
                             </div>
                             <div className="flex justify-start items-center gap-1">
-                                <SlCalender className='text-[#FFA454] size-3' />
-                                <p className={`font-josefin-sans text-navyBlue text-sm bg-pink/20`}>08-12-2024</p>
+                                <SlCalender className='text-[#fb2e86] size-3' />
+                                <p className={`font-josefin-sans text-[#151875] text-sm bg-pink-100 px-2`}>08-12-2024</p>
                             </div>
                         </div>
 
-                        <h4 className={`font-josefin-sans font-bold  text-navyBlue text-3xl `}>Top essential Trends in 2024</h4>
+                        <h4 className={`font-josefin-sans font-bold text-[#151875] text-3xl `}>Top essential Trends in 2024</h4>
                         <div className='font-lato text-[#8A8FB9] font-normal '>
                             <p>More off this less hello samlande lied much over tightly circa horse taped mightly Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod necessitatibus aliquam obcaecati consequatur! Repellat odio unde natus possimus enim quibusdam perferendis, temporibus numquam, sapiente suscipit dolorem blanditiis quidem dicta vel dolor laborum nesciunt necessitatibus ipsa soluta hic molestias impedit facilis libero? Laborum vitae eius obcaecati.</p>
                             <p className='py-2'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam impedit cupiditate! Porro praesentium ipsam modi impedit consequatur laboriosam nobis culpa repellendus et? Aut nobis numquam, sed dolorum amet deleniti.
                             </p>
-                            <blockquote className='bg-[#FAFAFB] border-l-2 p-2 my-5 leading-8 text-gray-500 border-red'>
+                            <blockquote className='bg-[#FAFAFB] border-l-2 p-2 my-5 leading-8 text-gray-500 border-[#fb2e86]'>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nemo iusto sapiente voluptates minima quaerat ipsum aut earum maxime amet deserunt obcaecati cum id reiciendis.
                             </blockquote>
                             <div className='grid md:grid-cols-2 gap-5'>
@@ -43,8 +43,8 @@ const SingleBlog = () => {
                                 <Image src={"/girl.png"} width={418} height={245} alt='girl' className='rounded-md' />
                                 <Image src={"/girl.png"} width={418} height={245} alt='girl' className='rounded-md' />
                             </div>
-                            <p className='py-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur ullam necessitatibus sapiente ducimus labore tenetur quasi harum, sed rem quidem perspiciatis exercitationem in ab aliquid? Praesentium totam beatae molestiae consequuntur.</p>
-
+                            <p className='py-6'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur ullam necessitatibus sapiente ducimus labore tenetur quasi harum, sed rem quidem perspiciatis exercitationem in ab aliquid? Praesentium totam beatae molestiae consequuntur.</p>
+ 
                             <div className='grid md:grid-cols-3 lg:grid-cols-4 items-center gap-1'>
                                 <PRDesignSimple version={2} />
                                 <PRDesignSimple version={2} />
@@ -60,10 +60,10 @@ const SingleBlog = () => {
                             </p>
                         </div>
                         <div className='flex justify-center w-full py-20 items-center gap-2'>
-                            <div className='flex justify-center items-center bg-navyBlue size-7 rounded-full text-white'>
+                            <div className='flex justify-center items-center bg-[#151875] size-7 rounded-full text-white'>
                                 <FaFacebookF />
                             </div>
-                            <div className='flex justify-center items-center bg-pink size-7 rounded-full text-white'>
+                            <div className='flex justify-center items-center bg-[#fb2e86] size-7 rounded-full text-white'>
                                 <FaInstagram />
                             </div>
                             <div className='flex justify-center items-center bg-[#37DAF3] size-7 rounded-full text-white'>
@@ -74,7 +74,7 @@ const SingleBlog = () => {
 
                    <Navigator />
 
-                    <div className='w-full flex my-20 flex-col gap-4'>
+                    <div className='w-full flex my-10 flex-col gap-4'>
                         <RelatedPostBar />
                         <RelatedPostBar />
                     </div>

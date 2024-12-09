@@ -16,15 +16,15 @@ const ProductBarDesign = () => {
             {/* Details */}
             <div className='flex flex-col items-start justify-start gap-y-1 md:gap-y-4 bg-white p-5'>
                 <div className='flex justify-start items-center gap-3'>
-                    <h1 className='text-navyBlue font-lato text-lg md:text-xl font-semibold'>Cantilever chair</h1>
+                    <h1 className='text-[#151875] font-lato text-lg md:text-xl font-semibold'>Cantilever chair</h1>
                     <div className='md:flex justify-center items-center gap-3 hidden'>
                         <div className='size-2 md:size-3 bg-[#05E6B7] rounded-full'></div>
-                        <div className='size-2 md:size-3 bg-pink rounded-full'></div>
-                        <div className='size-2 md:size-3 bg-navyBlue group-hover:bg-white rounded-full'></div>
+                        <div className='size-2 md:size-3 bg-[#fb2e86] rounded-full'></div>
+                        <div className='size-2 md:size-3 bg-[#151875] group-hover:bg-white rounded-full'></div>
                     </div>
                 </div>
                 <div className="flex justify-start items-center gap-4">
-                    <p className='font-josefin-sans text-left text-offBlue font-medium'>$42.00  <span className='text-red line-through'>$65.00</span></p>
+                    <p className='font-josefin-sans text-left text-[#151875] font-medium'>$42.00  <span className='text-[#fb2e86] line-through'>$65.00</span></p>
                     <div className='flex justify-start gap-1 text-[#FFC416] text-sm'>
                         <FaStar />
                         <FaStar />
@@ -37,15 +37,15 @@ const ProductBarDesign = () => {
 
 
                 <div className='flex justify-start items-center gap-5'>
-                <div className='flex justify-center items-center bg-transparent text-navyBlue hover:bg-[#e6e6e7] hover:text-offNavyBlue cursor-pointer rounded-full size-8 p-1'>
+                <div className='flex justify-center items-center bg-transparent text-[#151875] hover:bg-[#e6e6e7] hover:text-offNavyBlue cursor-pointer rounded-full size-8 p-1'>
                     <BsCart2 size={25} />
                 </div>
 
-                <div className='flex justify-center items-center bg-transparent text-navyBlue hover:bg-[#e6e6e7] hover:text-offNavyBlue cursor-pointer rounded-full size-8 p-1'>
+                <div className='flex justify-center items-center bg-transparent text-[#151875] hover:bg-[#e6e6e7] hover:text-offNavyBlue cursor-pointer rounded-full size-8 p-1'>
                     <TbHeart size={25} />
                 </div>
 
-                <div className='flex justify-center items-center bg-transparent text-navyBlue hover:bg-[#e6e6e7] hover:text-offNavyBlue cursor-pointer rounded-full size-8 p-1'>
+                <div className='flex justify-center items-center bg-transparent text-[#151875] hover:bg-[#e6e6e7] hover:text-offNavyBlue cursor-pointer rounded-full size-8 p-1'>
                     <LiaSearchPlusSolid size={25} />
                 </div>
             </div>

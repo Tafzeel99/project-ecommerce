@@ -14,10 +14,10 @@ const PRDesignSimple = ({ version = 1 }: { version?: 1 | 2 }) => {
             {/* Details */}
             <div className='flex items-start justify-between gap-2 bg-white  py-5'>
                 <div className={`"flex flex-col ${version == 2 ? 'items-end' : 'items-start'} gap-5"`}>
-                    <h1 className={`text-navyBlue font-lato font-semibold ${version == 2 && 'text-lg'}`}>Cantilever chair</h1>
+                    <h1 className={`text-black font-lato font-semibold ${version == 2 && 'text-lg'}`}>Cantilever chair</h1>
                     <div className='flex justify-start items-center gap-2'>
-                        <p className={`font-lato font-normal text-sm text-offBlue`}>$42.00</p>
-                        {version == 2 && <p className={`font-lato font-normal text-sm text-red line-through`}>$62.00</p>}
+                        <p className={`font-lato font-normal text-sm text-[#151875]`}>$42.00</p>
+                        {version == 2 && <p className={`font-lato font-normal text-sm text-[#fb2e86] line-through`}>$62.00</p>}
                        {version ==2 && <div className={`flex justify-start gap-1 text-[#FFC416] text-[10px]`}>
                             <FaStar />
                             <FaStar />
