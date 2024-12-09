@@ -1,21 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.cross div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  .cross div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .cross div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
