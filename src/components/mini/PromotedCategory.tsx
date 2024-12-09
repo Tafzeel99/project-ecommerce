@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const PromotedCategory = ({ title, image, btn, isActive }: { title: string, image: {src: string, width: number, height: number}, btn: string, isActive: boolean }) => {
+const PromotedCategory = ({ title, image, btn}: { title: string, image: {src: string, width: number, height: number}, btn: string, isActive: boolean }) => {
     return (
         <div className={`w-full mt-8 flex flex-col h-[270px] `}>
             <div className='flex flex-col p-4 bg-[#fff6fb] items-start'>
