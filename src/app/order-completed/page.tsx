@@ -1,6 +1,5 @@
 import Companies from '@/components/Companies'
 import MainHeader from '@/components/MainHeader'
-import Image from 'next/image'
 import React from 'react'
 import { GiCheckMark } from 'react-icons/gi'
 
