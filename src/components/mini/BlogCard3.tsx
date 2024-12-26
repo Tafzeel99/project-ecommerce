@@ -3,11 +3,11 @@ import React from 'react'
 import { FaPenNib } from 'react-icons/fa'
 import { SlCalender } from 'react-icons/sl'
 
-const BlogCard = ({size = "MINI", content = ""}: {size?: "MINI" | "LARGE", content?:string}) => {
+const BlogCard3 = ({size = "MINI", content = ""}: {size?: "MINI" | "LARGE", content?:string}) => {
     return (
         <div className='w-full flex flex-col rounded-md group'>
 
-            <Image src={"/image1.png"} width={size == "MINI" ? 377 : 870} height={size == "MINI" ? 255 : 543} alt='blog' className={`rounded-md ${size == "MINI" ? 'h-1/2' : 'h-2/3'}  object-cover`} />
+            <Image src={"/blog2.jpg"} width={size == "MINI" ? 377 : 870} height={size == "MINI" ? 255 : 543} alt='blog' className={`rounded-md ${size == "MINI" ? 'h-1/2' : 'h-2/3'}  object-cover`} />
             <div className='flex flex-col py-4 px-2 items-start gap-3'>
                 <div className='flex justify-start gap-4'>
                     <div className="flex justify-start items-center gap-1">
@@ -28,4 +28,4 @@ const BlogCard = ({size = "MINI", content = ""}: {size?: "MINI" | "LARGE", conte
     )
 }
 
-export default BlogCard
+export default BlogCard3

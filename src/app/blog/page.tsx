@@ -1,5 +1,5 @@
 import MainHeader from '@/components/MainHeader'
-import BlogCard from '@/components/mini/BlogCard'
+import BlogCard from '@/components/mini/BlogCard1'
 import React from 'react'
 import Sidebar from './Sidebar';
 

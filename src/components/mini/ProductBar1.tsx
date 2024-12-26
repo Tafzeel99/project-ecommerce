@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const ProductBar = () => {
+const ProductBar1 = () => {
   return (
     <div className='w-full py-2 h-[75px] bg-white flex justify-start items-center gap-3'>
       <div className='1/5 bg-[#f7f7f7] flex items-center justify-center'>
@@ -15,4 +15,4 @@ const ProductBar = () => {
   )
 }
 
-export default ProductBar
+export default ProductBar1

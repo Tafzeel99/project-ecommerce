@@ -13,12 +13,12 @@ const LatestProducts = () => {
                 <p className='text-[#151875] hover:text-[#fb2e86] hover:underline lato text-lg cursor-pointer'>Special Offer</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
-                <ProductCard designType='MEDIUM 1/3' />
-                <ProductCard designType='MEDIUM 1/3' />
-                <ProductCard designType='MEDIUM 1/3' />
-                <ProductCard designType='MEDIUM 1/3' />
-                <ProductCard designType='MEDIUM 1/3' />
-                <ProductCard designType='MEDIUM 1/3' />
+                <ProductCard designType='MEDIUMLT 1/1' />
+                <ProductCard designType='MEDIUMLT 1/2' />
+                <ProductCard designType='MEDIUMLT 1/3' />
+                <ProductCard designType='MEDIUMLT 1/4' />
+                <ProductCard designType='MEDIUMLT 1/5' />
+                <ProductCard designType='MEDIUMLT 1/6' />
             </div>
         </div>
     )

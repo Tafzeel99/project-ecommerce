@@ -23,9 +23,6 @@ const CartPage = () => {
 
                         <tbody>
                             <CartItem />
-                            <CartItem />
-                            <CartItem />
-                            <CartItem />
                         </tbody>
                     </table>
                     <div className='flex justify-between items-center'>

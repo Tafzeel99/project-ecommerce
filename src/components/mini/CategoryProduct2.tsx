@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const CategoryProduct = () => {
+const CategoryProduct2 = () => {
     return (
         <div className='w-full h-[360px] flex flex-col items-center justify-center relative group transition-all duration-200 hover:shadow-sm shadow-gray-300'>
             <div className="w-full h-[70%]">
@@ -26,4 +26,4 @@ const CategoryProduct = () => {
     )
 }
 
-export default CategoryProduct
+export default CategoryProduct2

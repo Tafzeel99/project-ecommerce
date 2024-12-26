@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
-const JustItem = () => {
+const JustItem1 = () => {
     return (
         <>  
               <div className='flex flex-col md:flex-row justify-start items-center gap-5'>
-            <Image src={"/cart1.jpg"} width={83} height={87} alt='image' className='rounded-md object-cover' />
+            <Image src={"/grid7.png"} width={70} height={70} alt='image' className='rounded-md object-cover' />
             <div className='flex flex-col'>
                 <h2>Ut diam consequat</h2>
                 <div className='flex justify-start items-center'>
@@ -17,13 +17,9 @@ const JustItem = () => {
                 </div>
             </div>
         </div>
-
-        
-        
-
         </>
 
     )
 }
 
-export default JustItem
+export default JustItem1

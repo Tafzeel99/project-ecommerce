@@ -1,6 +1,9 @@
 import Companies from '@/components/Companies'
 import MainHeader from '@/components/MainHeader'
-import PRDesignSimple from '@/components/mini/PRDesignSimple'
+import PRDesignRelated1 from '@/components/mini/PRDesignRelated1'
+import PRDesignRelated2 from '@/components/mini/PRDesignRelated2'
+import PRDesignRelated3 from '@/components/mini/PRDesignRelated3'
+import PRDesignRelated4 from '@/components/mini/PRDesignRelated4'
 import Image from 'next/image'
 import React from 'react'
 import { FaArrowRight, FaCircle, FaFacebookF, FaHeart, FaInstagram, FaStar, FaTwitter } from 'react-icons/fa'
@@ -12,12 +15,12 @@ const ProductDetail = () => {
             <div className='w-full px-5 lg:px-56 py-20'>
                 <div className="grid grid-cols-3 md:grid-cols-7 gap-3 rounded-md shadow-lg shadow-gray-200 border-2 border-gray-100">
                     <div className="flex flex-col gap-2">
-                        <Image src={"/product1.png"} width={151} height={155} alt='product' />
-                        <Image src={"/product1.png"} width={151} height={155} alt='product' />
-                        <Image src={"/product1.png"} width={151} height={155} alt='product' />
+                        <Image src={"/product1side.jpg"} width={120} height={120} alt='product' />
+                        <Image src={"/product2side.jpg"} width={120} height={120} alt='product' />
+                        <Image src={"/product3side.jpg"} width={120} height={120} alt='product' />
                     </div>
-                    <div className='col-span-2 flex justify-center items-center bg-skyBlue'>
-                        <Image src={"/product1.png"} width={375} height={487} alt='product' className='col-span-2' />
+                    <div className='col-span-2 flex justify-center items-center bg-white'>
+                        <Image src={"/product1main.jpg"} width={420} height={520} alt='product' className='col-span-2' />
                     </div>
                     <div className=' flex flex-col gap-3 p-5 col-span-4'>
                         <h2 className='text-4xl text-[#0D134E] font-semibold font-josefin-sans'>Playwood arm chair</h2>
@@ -104,10 +107,11 @@ const ProductDetail = () => {
             <div className='bg-white w-full px-5 lg:px-40 py-10'>
                 <h1 className='text-4xl font-semibold text-[#151875] font-josefin-sans py-10 pb-20'>Related Products</h1>
                 <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-10">
-                    <PRDesignSimple />
-                    <PRDesignSimple />
-                    <PRDesignSimple />
-                    <PRDesignSimple />
+                    <PRDesignRelated1 />
+                    <PRDesignRelated2 />
+                    <PRDesignRelated3 />
+                    <PRDesignRelated4 />
+                   
                 </div>
             </div>
             <Companies />
