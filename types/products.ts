@@ -1,23 +1,17 @@
+import { Image as IImage } from "sanity";
 
 
 
-export interface Product {
+export interface IProduct {
     _id : string,
     name : string,
     _type : "product",
-    image? : {
-        asset : {
-            _ref : string,
-            _type: "image",
-
-        }
-    };
+    image : IImage,
     price : number,
     description?: string,
     discountPercentage: number,
     isFeaturedProduct: Boolean,
     stockLevel: number,
     category: string,
-
     
 }
