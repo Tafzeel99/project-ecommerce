@@ -1,21 +1,11 @@
-import { client } from "@/sanity/lib/client";
 import { IProduct } from "../../../types/products";
 import { urlFor } from "@/sanity/lib/image";
 import Image from 'next/image'; // Ensure you import Image if you're using Next.js
+import { getProductData } from "@/sanity/lib/getProductData";
 
-export const getProductData = async (): Promise<IProduct[]> => {
-    try {
-        const res = await client.fetch('*[_type=="product"]'); // Corrected query syntax
-        return res;
-    } catch (error) {
-        console.error("Error fetching product data:", error);
-        return []; // Return an empty array in case of error
-    }
-}
 
 export default async function SOFA() {
     const data: IProduct[] = await getProductData();
-    console.log(data);
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
