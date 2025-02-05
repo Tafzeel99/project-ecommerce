@@ -1,4 +1,6 @@
-export default {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+const mySchema = {
     name: 'product',
     type: 'document',
     title: 'Product',
@@ -63,3 +65,5 @@ export default {
       },
     ],
   };
+
+  export default mySchema;
