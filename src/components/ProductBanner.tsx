@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Heading from './mini/Heading'
 import { FaCheck } from 'react-icons/fa'
+import Link from 'next/link'
 
 const ProductBanner = () => {
     return (
@@ -36,9 +37,11 @@ const ProductBanner = () => {
                             <p>Material expose like metals</p>
                         </div>
                     </div>
+                    <Link href={"/shop"}>
                     <div className='flex justify-start items-center gap-3'>
                         <button className='bg-[#fb2e86] text-white font-josefin-sans font-semibold px-10 py-2 rounded-sm'>Shop Now</button>
                     </div>
+                    </Link>
                 </div>
 
                 <Image src={"/sofachair.png"} alt='sofa' width={500} height={500} />

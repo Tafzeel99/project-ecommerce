@@ -18,12 +18,12 @@ const Navbar = () => {
         {/* Menu */}
         <div className='hidden md:flex col-span-2 justify-start gap-4 items-center'>
           <Link href={"/"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Home</Link>
-          <Link href={"/product/page"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Products</Link>
-          <Link href={"/blog"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Blog</Link>
+          <Link href={"category-chairs"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Categories</Link>
           <Link href={"/shop"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Shop</Link>
           <Link href={"/about"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>About</Link>
-          <Link href={"/faq"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>FAQ</Link>
           <Link href={"/contact"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Contact</Link>
+          <Link href={"/faq"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>FAQ</Link>
+          <Link href={"/blog"} className='font-lato text-offBlue hover:underline hover:text-[#fb2e86]'>Blog</Link>
         </div>
 
         {/* Mobile navigator icon */}

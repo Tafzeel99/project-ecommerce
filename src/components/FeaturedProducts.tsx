@@ -17,7 +17,9 @@ export default async function FeaturedProducts() {
       <Heading text='Featured Products' />
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-10'>
 
+{/* MAP DATA */}
         {data.map((product) => (
+          <Link href={`product/${product._id}`}>
           <div key={product._id} className='w-full h-[360px] flex flex-col relative group transition-all duration-200 shadow-lg drop-shadow-sm shadow-[#f4f4f4]'>
 
             {/* Image */}
@@ -38,11 +40,10 @@ export default async function FeaturedProducts() {
             </div>
 
             {/* Details Button */}
-            <Link href={`product/${product._id}`}>
+            
               <div className='flex justify-center items-center absolute bottom-[130px] left-8 md:left-16 opacity-0 group-hover:opacity-100'>
                 <button className='px-4 py-2 rounded-sm text-white bg-[#08D15F] font-josefin-sans text-xs hover:bg-black'>View Details</button>
               </div>
-            </Link>
 
             {/* icons */}
             <div className='flex justify-start items-center gap-2 absolute top-2 left-2 z-10 opacity-0 group-hover:opacity-100'>
@@ -59,6 +60,8 @@ export default async function FeaturedProducts() {
               </div>
             </div>
           </div>
+          </Link>
+
         ))}
 
       </div>
