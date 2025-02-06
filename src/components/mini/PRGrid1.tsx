@@ -17,11 +17,11 @@ const PRGrid1 = ({showDots=false}: {showDots?: boolean}) => {
             {/* Details */}
             <div className='flex flex-col items-center justify-center gap-2 bg-white  py-2'>
                 <h1 className='text-navyBlue font-lato font-semibold'>Comfort chair</h1>
-                {showDots && <div className='flex justify-center items-center gap-2'>
+                <div className='flex justify-center items-center gap-2'>
                     <div className="size-3 bg-[#DE9034] rounded-full"></div>
                     <div className="size-3 bg-pink rounded-full"></div>
                     <div className="size-3 bg-offPurple rounded-full"></div>
-                </div>}
+                </div>
                 <div className='flex gap-2'>
                     <p className='font-josefin-sans font-normal text-sm text-offBlue'>$42.00</p>
                     <p className={`font-lato text-xs ${showDots ? 'text-pink' : 'text-gray-400'} line-through`}>$65.00</p>

@@ -3,6 +3,7 @@ import { Image as IImage } from "sanity";
 
 
 export interface IProduct {
+    id: string ;
     _id : string,
     name : string,
     _type : "product",
@@ -13,5 +14,9 @@ export interface IProduct {
     isFeaturedProduct: Boolean,
     stockLevel: number,
     category: string,
+    slug: {
+        _type: 'slug'
+        current: string
+    }
     
 }
