@@ -19,7 +19,7 @@ export default async function FeaturedProducts() {
 
 {/* MAP DATA */}
         {data.map((product) => (
-          <Link href={`product/${product._id}`}>
+          <Link  key={product._id} href={`product/${product._id}`}>
           <div key={product._id} className='w-full h-[360px] flex flex-col relative group transition-all duration-200 shadow-lg drop-shadow-sm shadow-[#f4f4f4]'>
 
             {/* Image */}

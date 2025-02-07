@@ -28,8 +28,8 @@ export default async function LatestProducts() {
 
                 {/* MAP DATA */}
                 {data.map((product) => (
-                    <Link href={`product/${product._id}`}>
-                        <div key={product._id} className='w-full h-[360px] flex flex-col relative group transition-all duration-200 shadow-sm hover:shadow-md shadow-gray-100'>
+                    <Link key={product._id} href={`product/${product._id}`}>
+                        <div  className='w-full h-[360px] flex flex-col relative group transition-all duration-200 shadow-sm hover:shadow-md shadow-gray-100'>
 
                             {/* Image */}
                             <div className='w-full h-[90%] bg-[#f7f7f7] group-hover:bg-transparent flex justify-center items-center'>

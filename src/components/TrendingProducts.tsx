@@ -26,8 +26,8 @@ export default async function TrendingProducts() {
 
                 {/* MAP DATA */}
                 {data.map((product) => (
-                    <Link href={`product/${product._id}`}>
-                    <div key={product._id} className='w-full h-[360px] flex flex-col relative group transition-all duration-200 shadow-lg mt-12 hover:shadow-md shadow-gray-100'>
+                    <Link key={product._id} href={`product/${product._id}`}>
+                    <div  className='w-full h-[360px] flex flex-col relative group transition-all duration-200 shadow-lg mt-12 hover:shadow-md shadow-gray-100'>
 
                         {/* Image */}
                         <div className='w-full h-[70%] bg-[#f6f7fb] flex justify-center items-center'>
