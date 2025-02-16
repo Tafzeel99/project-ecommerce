@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Companies from "@/components/Companies";
 import MainHeader from "@/components/MainHeader";
@@ -13,7 +13,7 @@ import { LiaSearchPlusSolid } from "react-icons/lia";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
 
-export default function ShopGrid() {
+function ShopGridContent() {
   const [products, setProducts] = useState<IProduct[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<IProduct[]>([]);
   const searchParams = useSearchParams();
@@ -30,7 +30,7 @@ export default function ShopGrid() {
 
   // Update filtered products based on search query
   useEffect(() => {
-    if (searchQuery) {
+    if (searchQuery && products.length > 0) {
       setFilteredProducts(
         products.filter((product) =>
           product.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -97,5 +97,13 @@ export default function ShopGrid() {
 
       <Companies />
     </>
+  );
+}
+
+export default function ShopGrid() {
+  return (
+    <Suspense fallback={<p>Loading...</p>}>
+      <ShopGridContent />
+    </Suspense>
   );
 }

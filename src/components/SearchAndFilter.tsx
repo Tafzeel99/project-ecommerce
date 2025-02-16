@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { IProduct } from "../../types/products";
 
 interface SearchAndFilterProps {
@@ -14,16 +14,12 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [sortOrder, setSortOrder] = useState("default");
 
-  useEffect(() => {
-    handleFilter();
-  }, [searchQuery, selectedCategory, sortOrder]);
-
   // Extract unique categories from products
   const categories = Array.from(new Set(products.map((p) => p.category)));
 
-  // Handle filtering and sorting
-  const handleFilter = () => {
-    let filtered = products;
+  // Memoized handleFilter function
+  const handleFilter = useCallback(() => {
+    let filtered = [...products]; // Ensure a new array to avoid modifying state directly
 
     if (searchQuery) {
       filtered = filtered.filter((product) =>
@@ -36,13 +32,18 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
     }
 
     if (sortOrder === "lowest") {
-      filtered = filtered.sort((a, b) => a.price - b.price);
+      filtered.sort((a, b) => a.price - b.price);
     } else if (sortOrder === "highest") {
-      filtered = filtered.sort((a, b) => b.price - a.price);
+      filtered.sort((a, b) => b.price - a.price);
     }
 
-    setFilteredProducts([...filtered]);
-  };
+    setFilteredProducts(filtered);
+  }, [products, searchQuery, selectedCategory, sortOrder, setFilteredProducts]);
+
+  // Handle changes in filters
+  useEffect(() => {
+    handleFilter();
+  }, [handleFilter]);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6 px-5 md:px-10 lg:px-40">

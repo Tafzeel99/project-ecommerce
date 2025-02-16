@@ -1,7 +1,4 @@
-import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
-import { FaList } from 'react-icons/fa';
-import { IoGrid } from 'react-icons/io5';
+import React, { useState, useEffect, useCallback } from 'react';
 import { IProduct } from '../../../types/products';
 
 interface StoreDatahandlerProps {
@@ -21,7 +18,8 @@ const StoreDatahandler: React.FC<StoreDatahandlerProps> = ({ products, setFilter
     setCategories(uniqueCategories);
   }, [products]);
 
-  const handleFilter = () => {
+  // Memoized handleFilter function
+  const handleFilter = useCallback(() => {
     let filteredProducts = [...products];
 
     // Apply search filter
@@ -44,12 +42,12 @@ const StoreDatahandler: React.FC<StoreDatahandlerProps> = ({ products, setFilter
     }
 
     setFilteredProducts(filteredProducts);
-  };
+  }, [products, searchTerm, category, sortOption, setFilteredProducts]);
 
   // Handle changes in filters
   useEffect(() => {
     handleFilter();
-  }, [sortOption, searchTerm, category]);
+  }, [handleFilter]);
 
   return (
     <div className="w-full px-5 md:px-10 lg:px-40 py-5 lg:py-20 flex lg:flex-row flex-col justify-between items-center">
